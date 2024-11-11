@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import EventoMudar from './componentes/EventoMudar';
+import EventoAlert from './componentes/EventoAlert';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Bem vindo do mundo de React</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Conheça a React
-        </a>
-      </header>
+function App(){
+  return(
+    <div>
+      <EventoAlert/>
     </div>
   );
 }
 
-export default App;
+function AppMudar() {
+  return (
+    <div>
+      <EventoMudar />
+    </div>
+  );
+}
+
+export default AppMudar;
